@@ -45,13 +45,15 @@ input[type="submit"]{
 }
 
 .signup p{
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
     margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .signup a{
     color: dodgerblue;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
 }

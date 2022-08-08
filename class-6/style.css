@@ -1,0 +1,166 @@
+.wrapper{
+    height: auto;
+    margin: auto;
+    width: 600px;
+    /* background-color: blue; */
+    border: 1px solid blue;
+}
+
+.row-1{
+    height: 100px;
+    width: 100%;
+    /* border-width: 0 0px 1px 0px; clock wise - top, right, bottom, left */
+    /* border-style: solid; */
+    /* border-color: red; */
+    border-bottom: 1px solid red;
+}
+.col-1{
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid blue;
+    float: left;
+}
+.col-2{
+    height: 100px;
+    width: 74.8%;
+    float: left;
+}
+.row-2{
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid red;
+}
+.col-3{
+    height: 150px;
+    width: 33%;
+    border-right: 1px solid red;
+    float: left;
+}
+.col-4{
+    background-color: green;
+    position: fixed;
+    left: 35%;
+    width: 30%;
+}
+/* .circle{
+    margin: 50px 70px ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+} */
+.col-5{
+    border: none;
+}
+.row-3{
+    height: 200px;
+    width: 100%;
+    border-bottom: 1px solid red;
+}
+.row-4{
+    height: 750px;
+    width: 100%;
+    border-bottom: 1px solid red;
+}
+.col-7{
+    height: 100%;
+    width: 20%;
+    border-right: 1px solid blue;
+    float: left;
+}
+.col-8{
+    height: 100%;
+    width: 78.9%;
+    /* border-right: 1px solid red; */
+    float: left;
+    position: relative;
+}
+.row-5{
+    height: 50px;
+    width: 100%;
+}
+.groove{
+    border-style: groove;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin: 50px;
+    padding: 50px;
+    border-top: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+    
+.content{
+    position: relative;
+    height: 300px;
+}
+.outside{
+    border-style: outset;
+}
+.inside{
+    border-style: inset;
+}
+.mix{
+    border-style: solid dotted double dashed ;
+}
+.ridge{
+    border-style: ridge;
+}
+.footer{
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.fbody{
+ 
+}
+
+.rectangle{
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(65, 172, 65);
+    position: relative;
+}
+.circle{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 45px;
+    left: 140px
+}
+.stick{
+    height: 500px;
+    width: 20px;
+    background-color: rgb(12, 46, 46);
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 410px;
+}
+.rope1{
+    height: 5px;
+    width: 20px;
+    background-color: rgb(53, 51, 49);
+    position: absolute;
+    top: 53px;
+    left: 420px;
+
+}
+
+.rope2{
+    height: 5px;
+    width: 20px;
+    background-color: rgb(53, 51, 49);
+    position: absolute;
+    top: 173px;
+    left: 420px;
+
+}

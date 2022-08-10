@@ -164,3 +164,13 @@
     left: 420px;
 
 }
+.stone{
+    height: 100px;
+    width: 150px;
+    background-color: bisque;
+    position: absolute;
+    top: 487px;
+    left: 346px;
+    border: 2px solid rgb(18, 18, 63);
+    border-radius: 5px;
+}

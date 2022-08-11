@@ -12,7 +12,7 @@
 }
 
 .grid .col{
-    background-color: rgb(135, 141, 141);
+    background-color: rgba(158, 161, 158, 0.685);
     text-align: center;
     color: #000;
     line-height: 50px;
@@ -28,13 +28,16 @@
 .col-h-2{
     height: 80px;
 }
+.col-h-4{
+    height: 80px;
+}
 .col-h-3{
     height: 80px;
 }
-.col-h-4{
+.col-h-5{
     height: 550px;
 }
-.col-h-5{
+.col-h-6{
     height: 50px;
 }
 .col-1{width: 8.33%;}

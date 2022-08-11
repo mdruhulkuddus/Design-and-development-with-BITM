@@ -21,7 +21,7 @@
 }
 
 .grid .col:nth-child(odd) {
-    background-color: rgb(160, 241, 241);
+    background-color:  #99c2ff;
 }
 
 .col-h-1 {

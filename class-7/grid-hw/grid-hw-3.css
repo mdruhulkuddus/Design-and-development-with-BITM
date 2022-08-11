@@ -12,7 +12,7 @@
 }
 
 .grid .col{
-    background-color: rgba(163, 212, 152, 0.685);
+    background-color: #e0e0eb;
     text-align: center;
     color: #000;
     line-height: 50px;
@@ -20,7 +20,7 @@
 }
 
 .grid .col:nth-child(odd){
-    background-color: rgb(247, 215, 147);
+    background-color: #808080;
 }
 .col-h-1{
     height: 100px;

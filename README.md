@@ -39,9 +39,9 @@ All class work and homework and project codes are include here.
     * tag - input, button, submit, textbox, center, label
   * CSS
     * selector { declaration (property:)}
-    * inline css - style attribute
-    * internal css - style tag
-    * external css - css file
+    * inline css - style attribute in tag
+    * internal css - style tag in head
+    * external css - css file with link in head
     * class(.)  id(#), (*) all
   * __Top work__
     * Register page design by HTML

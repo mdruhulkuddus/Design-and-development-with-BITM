@@ -73,7 +73,7 @@ All class work and homework and project codes are include here.
    * Responsive layout design for mobile-tablet-laptop-larger screen by HTML & CSS
 
 **Class - 9**
- * CSS - box-sizing, double class selector, list-style, hover
+ * CSS - box-sizing, double class selector, list-style, hover, line-height
  * __Top work__
    * Menu and Sub menu design by Html and CSS
   

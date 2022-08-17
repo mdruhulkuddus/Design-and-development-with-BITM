@@ -6,13 +6,13 @@
 body{
     background-image: url(./image/background.jfif);
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed; /* fixed no repet in scroll */
 }
 
 .menu-bar{
     background-color: #1a4e34;
     text-align: center;
-
 }
 .menu-bar ul{
     list-style: none;
@@ -29,7 +29,7 @@ body{
     color: #fff;
     font-size: 15px;
     text-decoration: none;
-    
+    text-transform: capitalize;
 }
 .menu-bar ul li i{
     margin-right: 5px;
@@ -65,13 +65,13 @@ body{
     border-bottom: 1px solid #fff;
     text-align: left;
 }
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: naone;
+}
 .menu-bar ul li:hover .sub-menu-1 ul li:hover{
     background-color: cornflowerblue;
     color: #000;
     
-}
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
-    border-bottom: none;
 }
 
 .sub-menu-2{

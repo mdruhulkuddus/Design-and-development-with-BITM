@@ -76,6 +76,81 @@ body{
     color: #fff;
 }
 
+.courses{
+    text-align: center;
+    margin: 80px 135px;
+}
+
+.courses p{
+    font-size: 14px;
+    color: rgb(136, 132, 132);
+}
+
+.course-content{
+    padding: 15px;
+    background-color: rgb(253, 249, 242);
+    border-radius: 5px;
+    transition: 0.7s;
+}
+
+.course-content h4{
+    font-size: 18px;
+}
+
+.course-content p{
+    text-align: justify;
+    margin-top: 20px;
+}
+.course-content:hover{
+    box-shadow: 0px 0px 10px rgb(117, 117, 117);
+}
+
+.campus{
+    text-align: center;
+    margin: 0px 135px;
+}
+.campus-content img{
+    width: 100%;
+    border-radius: 5%;
+}
+.campus-content{
+    position: relative;
+}
+
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5%;
+    transition: 1s;
+
+}
+
+.layer-content h3{
+    position: absolute;
+    left: 30%;
+    bottom: 0px;
+    opacity: 0;
+    transition: 1s;
+    color: #fff;
+}
+
+.campus-content:hover .layer{
+    background-color: #000;
+    bottom: 100%;
+    opacity: 0.5;
+
+}
+
+.campus-content:hover .layer-content h3{
+    bottom: 50%;
+    opacity: 2;
+}
+
+
 @media(max-width:540px){
     .text-box{
         top:15%;
@@ -119,6 +194,22 @@ body{
     }
     .menu ul li:last-child{
         width: 0%;
+    }
+
+    .courses{
+        margin: 50px 10px;
+    }
+
+    .course-content{
+        margin-bottom: 20px;
+    }
+
+    .campus{
+        margin: 50px 10px;
+    }
+    
+    .campus-content{
+        margin-bottom: 15px;
     }
 }
 

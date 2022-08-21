@@ -284,39 +284,10 @@ body {
     margin: 20px 0px 10px;
 }
 
-.red-btn{
-    border: 1px solid red;
-    color: blue;
-    background: transparent;
-    padding: 12px 34px;
-    font-size: 13px;
-}
-/* about us page */
-.about-us{
-    padding: 0px 135px;
-    margin-top: 100px;
-}
+/* banner */
 
-.about-us-content p{
-    font-size: 14px;
-    color: #777;
-}
-.about-us-content h1{
-    padding-top: 0px;
-    font-size: 36px;
-    font-weight: 600;
-}
-.about-us-content{
-
-}
-
-.about-us-content img{
-    width: 100%;
-}
-
-/*  courses page */
-.courses-header {
-    min-height: 50vh;
+.banner {
+    min-height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../image/background.jpg);
     background-size: cover;
@@ -324,11 +295,77 @@ body {
     position: relative;
 }
 
-.text-box-c h1 {
-    margin-top: 25px;
+.banner h1{
     font-size: 36px;
-    font-weight: 600;
+    margin-top: 70px;
 }
+
+/* about page */
+.platform{
+    margin-top: 100px;
+    padding: 0px 135px;
+}
+.platform-content h1{
+    font-size: 36px;
+}
+.platform-content p{
+    font-size: 14px;
+    color: #777;
+    text-align: justify;
+}
+.hero-btn2{
+    border: 1px solid red;
+    border-radius: 0px;
+    padding: 10px 40px;
+    transition: 1s;
+}
+.hero-btn2:hover{
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+}
+
+/* blog */
+
+.blog{
+    padding: 0px 135px;
+    margin-top: 100px;
+}
+
+.blog-content h1{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+
+.blog-content p{
+    font-size: 14px;
+    color: #777;
+    text-align: justify;
+}
+
+
+.heading-category{
+    background-color: #F44336;
+    padding: 3px;
+    margin-bottom: 35px;
+}
+
+.heading-category h3{
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 15px;
+}
+
+.single-category{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.single-category .col-md-3 p{
+    text-align: right;
+}
+
 
 @media(max-width:540px) {
     .text-box {
@@ -422,6 +459,10 @@ body {
 
     .about{
         padding: 0px 15px;
+        text-align: justify;
+    }
+    .about h6, .social-icon, .footer-text{
+        text-align: center;
     }
     /*  courses page */
     .courses-header {

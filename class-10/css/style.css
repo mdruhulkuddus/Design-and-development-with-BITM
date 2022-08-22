@@ -1,0 +1,26 @@
+.header{
+    /* background-color: red; */
+}
+.header img{
+    height: 60px;
+}
+.menu ul li{
+    padding-left: 30px;
+}
+.menu ul li a{
+    color: rgb(78, 77, 77);
+}
+
+.slider img{
+    height: 350px;
+}
+
+.slider .slide-text-bg{
+    background-color: black;
+    height: 105px;
+    width: 458px;
+    position: absolute;
+    top: 240px;
+    left: 454px;
+    opacity: 0.4;
+}

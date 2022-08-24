@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me</title>
+    <style>
+        body{
+            height: 1000px;
+            width: 100%;
+        }
+        .main-content{
+            height: 400px;
+            width: 40%;
+            margin: auto;
+        }
+        .small img{
+            height: 50px; width: 50px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Image onclick effect by javascript</h1> <hr>
+        <div>
+            <img id="mainImg" src="image/index.jpg" alt="" style="height: 300px; width: 500px;">
+        </div>
+        <div class="small">
+            <img id="SmallmainImg" src="image/index.jpg" alt="" style=" margin-right: 20px; border: 2px solid red;">
+            <img id="img1" src="image/image1.jpg" alt="" >
+            <img id="img2" src="image/image2.jpg" alt="" >
+            <img id="img3" src="image/image3.jpg" alt="" >
+            <img id="img4" src="image/image4.jpg" alt="" >
+        </div>
+
+        <script>
+            var mainImg = document.getElementById('mainImg');
+            var SmallmainImg = document.getElementById('SmallmainImg');
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            var img3 = document.getElementById('img3');
+            var img4 = document.getElementById('img4');
+            img1.onclick = function(){
+                mainImg.setAttribute('src', this.getAttribute('src'))
+                SmallmainImg.setAttribute('src', this.getAttribute('src'))
+            }
+            img2.onclick = function(){
+                mainImg.setAttribute('src', this.getAttribute('src'))
+                SmallmainImg.setAttribute('src', this.getAttribute('src'))
+            }
+            img3.onclick = function(){
+                mainImg.setAttribute('src', this.getAttribute('src'))
+                SmallmainImg.setAttribute('src', this.getAttribute('src'))
+            }
+            img4.onclick = function(){
+                mainImg.setAttribute('src', this.getAttribute('src'))
+                SmallmainImg.setAttribute('src', this.getAttribute('src'))
+            }
+
+        </script>
+
+        <hr>
+        <h1>Form field onkeyup action</h1>
+        <hr>
+        <form action="">
+            <input type="text" id="fname" placeholder="first name"> <br><br>
+            <input type="text"  id="lname" placeholder="last name">
+        </form>
+        <hr>
+        <table  width="500" border="1">
+            <tr height="50">
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Full name</th>
+            </tr>
+            <tr height="50">
+                <td id="showFname"></td>
+                <td id="showLname"></td>
+                <td id="fullName"></td>
+            </tr>
+            <tr height="50">
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <script>
+            var faName = document.getElementById('fname').onkeyup =  function(){
+                var faName = document.getElementById('fname').value;
+                document.getElementById('showFname').innerHTML = faName;
+            }
+            var laName = document.getElementById('lname').onkeyup =  function(){
+                var laName = document.getElementById('lname').value;
+                var faName = document.getElementById('fname').value;
+                document.getElementById('showLname').innerHTML = laName;
+                document.getElementById('fullName').innerHTML = faName + ' ' + laName;
+            }
+        </script>
+    </div>
+</body>
+</html>

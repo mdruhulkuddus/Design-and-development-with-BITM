@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image effect</title>
+    <style>
+        .smallimage img{
+            height: 50px; width: 50px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image onclick effect by javascript</h1> <hr>
+    <div>
+        <img id="mainImg" src="image/index.jpg" alt="" style="height: 300px; width: 300px;">
+    </div>
+    <div class="smallimage">
+        <img id="img1" src="image/image1.jpg" alt="" >
+        <img id="img2" src="image/image2.jpg" alt="" >
+        <img id="img3" src="image/image3.jpg" alt="" >
+        <img id="img4" src="image/image4.jpg" alt="" >
+        <img id="img5" src="image/index.jpg" alt="" >
+    </div>
+
+    <script>
+        var mainImg = document.getElementById('mainImg');
+        var img1 = document.getElementById('img1');
+        var img2 = document.getElementById('img2');
+        var img3 = document.getElementById('img3');
+        var img4 = document.getElementById('img4');
+        var img5 = document.getElementById('img5');
+        img1.onclick = function(){
+            mainImg.setAttribute('src', this.getAttribute('src'))
+        }
+        img2.onclick = function(){
+            mainImg.setAttribute('src', this.getAttribute('src'))
+        }
+        img3.onclick = function(){
+            mainImg.setAttribute('src', this.getAttribute('src'))
+        }
+        img4.onclick = function(){
+            mainImg.setAttribute('src', this.getAttribute('src'))
+        }
+        img5.onclick = function(){
+            mainImg.setAttribute('src', this.getAttribute('src'))
+        }
+
+    </script>
+
+    <hr>
+    <hr>
+    <form action="">
+        <input type="text" id="fname" onkeyup="fastName()" placeholder="first name"> <br><br>
+        <input type="text"  id="lname" onkeyup="lastName()" placeholder="last name">
+    </form>
+    <hr>
+    <table  width="500" border="1">
+        <tr height="50">
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Full name</th>
+        </tr>
+        <tr height="50">
+            <td id="showFname"></td>
+            <td id="showLname"></td>
+            <td id="showFullName" onclick="fullName()"></td>
+        </tr>
+        <tr height="50">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <script>
+          function fastName(){
+            var faName = document.getElementById('fname').value;
+            document.getElementById('showFname').innerHTML = faName;
+        }
+        function lastName(){
+            var laName = document.getElementById('lname').value;
+            document.getElementById('showLname').innerHTML = laName;
+        }
+        function fullName(){
+            var res1 = document.getElementById('showFname').innerHTML;
+            var res2 = document.getElementById('showLname').innerHTML;
+            document.getElementById('showFullName').innerHTML = res1 + ' ' + res2;
+        }
+        
+    </script>
+</body>
+</html>

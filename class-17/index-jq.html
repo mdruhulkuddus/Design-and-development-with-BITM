@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        
+        .smallimage img{
+            height: 90px; 
+            width: 116px;
+            
+        }
+        .smallimage{
+            width: 100%;
+        }
+        .mainImage img{
+            height: 400px; width: 600px;
+        }
+        body{
+           
+            width: 100%;
+        }
+        .main-content{
+            width: 50%;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>Image onclick effect by jQuery</h1> <hr>
+        <div class="mainImage">
+            <img id="mainImg" src="image/index.jpg" alt="">
+        </div>
+        <div class="smallimage">
+            <img id="img1" src="image/image1.jpg" alt="" class="img">
+            <img id="img2" src="image/image2.jpg" alt="" class="img">
+            <img id="img3" src="image/image3.jpg" alt="" class="img">
+            <img id="img4" src="image/image4.jpg" alt="" class="img">
+            <img id="img5" src="image/index.jpg" alt="" class="img">
+        </div>
+    </div>
+   
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $('.img').click(function(){
+            var img = $(this).attr('src');
+            $('#mainImg').attr('src', img);
+        });
+    </script>
+</body>
+</html>

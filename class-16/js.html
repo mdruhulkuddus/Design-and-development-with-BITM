@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Js</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js</title>
+    </head>
+    <body>
 
-   <h1 id="demo"></h1>
+        <h1 id="demo"></h1>
 
 
-    <form>
-        <input type="text" onkeyup="fullName()" id="fName"> <br><br>
-        <input type="text" id="lName"> <br><br>
-        <button type="button" onclick="fullName()">Add</button>
-    </form>
-    
-    <script>
+        <form>
+            <input type="text" onkeyup="fullName()" id="fName"> <br><br>
+            <input type="text" id="lName"> <br><br>
+            <button type="button" onclick="fullName()">Add</button>
+        </form>
+
+        <script>
         function fullName(){
             var fName = document.getElementById('fName').value;
             var lname = document.getElementById('lName').value;
             document.getElementById('demo').innerHTML = fName + ' ' + lname;
         }
     </script>
-</body>
+    </body>
 </html>

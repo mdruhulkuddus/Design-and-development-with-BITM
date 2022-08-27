@@ -1,0 +1,149 @@
+.box{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.one{
+    height: 100px;
+    width: 100px;
+    background: gray;
+    transition: 2s;
+    margin: auto;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.one:hover{
+    /* transform: scale(2.1); */
+    /* transform: scaleX(2.1); */
+    /* transform: scaleY(2.1); */
+    /* transform: rotate(-180deg); */
+    /* transform: rotateX(180deg); */
+    /* transform: rotate3d(1, 1, 1, 360deg); */
+    transform: rotate(180deg);
+}
+
+/* .oneX{
+    height: 300px;
+    width: 300px;
+    background: rgb(58, 34, 126);
+    transition: 2s;
+    margin: auto;
+    transform: skewY(-30deg);
+    float: left;
+} */
+
+/* .oneY{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background: rgb(58, 34, 126);
+    transition: 2s;
+    transform: skewX(-30deg);
+    
+} */
+.book-animate{
+    margin-left: 20%;
+}
+.oneX{
+    height: 200px;
+    width: 300px;
+    background: green;
+    transition: 2s;
+    margin: auto;
+    transform: skewY(30deg);
+    float: left;
+    padding: 50px;
+}
+.oneY{
+    height: 200px;
+    width: 300px;
+    background: rgb(161, 190, 107);
+    transition: 3s;
+    margin: 3px;
+    transform: skewY(-30deg);
+    float: left;
+    padding: 50px;
+}
+
+img{
+    margin: 20px;
+    float: left;
+    height: 150px;
+    width: 180px;
+    transition: 2s;
+}
+.container{
+    display: inline-block;
+    margin: 100px;
+}
+.imgE1:hover{
+    transform: skew(90deg);
+}
+
+.imgE2:hover{
+    transform: rotate(-90deg);
+}
+.imgE3:hover{
+    transform: scale(3);
+}
+.imgE4:hover{
+    transform: rotateX(90deg);
+}
+.three{
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(52, 146, 150);
+    transition: width 1s, height 2s, transform 1s;
+    margin: 200px;
+}
+.three:hover{
+    height: 300px;
+    width: 300px;
+    transform: rotate(180deg);
+}
+
+.four{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: reverse; */
+    
+}
+
+/* @keyframes example{
+    0%{background-color: red; left: 0; top: 0;}
+    25%{background-color: blue; left:100px; top:0}
+    50%{background-color: rgb(80, 161, 25); left:400px; top:5px}
+    75%{background-color: rgb(170, 52, 135); left:400px; top:-100px}
+    100%{background-color: blue; left:400px; top:-150px; border-radius: 50%;}
+} */
+
+
+@keyframes example{
+    0%{width:100px; background-color: red; left: 0; top: 0;}
+    25%{width:400px; background-color: blue; left:0px; top:0}
+    50%{width:800px; background-color: rgb(80, 161, 25); left:0px; top:0px}
+    75%{width:1000px; background-color: rgb(170, 52, 135); left:0px; top:00px}
+    100%{width:1300px; background-color: rgb(218, 190, 33); left:0px; top:0px; border-radius:0; }
+}
+/* .five{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    position: relative;
+    animation-name: animat;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: 5;
+}
+@keyframes animat{
+    0% {width: 300px; }
+} */

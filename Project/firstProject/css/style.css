@@ -36,7 +36,7 @@ body {
 }
 
 .topbar a {
-    color: #acacac;
+    color: #fff;
     margin-right: 10px;
     text-decoration: none;
 }
@@ -50,17 +50,26 @@ body {
     color: #E91E63;
     margin-right: 5px;
 }
-/* fixed top */
+/* fixed top + bact to top */
 
-  
-  /* .sticky {
+.sticky-top{
+    background-color: #FFFFFF;
+    box-shadow: 5ps solid #444;
+}  
+
+.back_to_top {
     position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #F1F1F1;
-    overflow: -moz-hidden-unscrollable;
-  } */
-  
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color: #E91E63 !important;
+    transition: background 0.5s;
+    color: #fff; 
+}
+.back_to_top:hover{
+    background-color: #0C2E8A !important;
+    color: #fff;
+}
 
 /* menu */
 
@@ -180,13 +189,16 @@ body {
     font-weight: 400;
 }
 .welcome-right ul{
+
     margin-top: 20px;
-    list-style: circle;
+    list-style: none;
 }
 .welcome-right li{
     line-height: 2.1;
 }
-
+.welcome-right li i{
+    color: #0c2e8a;
+}
 /* top services */
 
 .top-services-card{
@@ -491,3 +503,70 @@ body {
     color: #081E5B;
 }
 
+
+
+/* media query for extra small device */
+@media(max-width:576px) {
+
+    .topbar{
+        display: none;
+    }
+
+    .site-logo{
+        margin-left: 30px;
+    }
+    .site-logo h1{
+        font-size: 35px;
+        
+    }
+    .slider{
+        min-height: 40vh;
+    }
+    .btn-started {
+        margin: 0 !important;
+        padding: 5px 20px;
+      
+    }
+    .slider-content{ 
+        width: 100%;
+        top: 42%;
+        right: 5%;
+    }
+    .slider-content h1 {
+        font-size: 40px;
+    }
+
+    .slider-content h2{
+        font-size: 22px;
+        color: #fff;
+        text-shadow: 2px 2px #444;
+    }
+
+    .welcome, .top-services,.service,
+    .client, .testimonial, .team, .contactUs, .map
+    {
+        padding: 0px 20px;
+       margin-top: 30px;
+    }
+
+    .section-heading h1{
+        font-size: 25px;
+    }
+    .section-heading p{
+        font-size: 12;
+        text-align: justify;
+    }
+
+    .portfolio{
+        padding: 0px 20px;
+    }
+
+    .testimonial-card{
+        width: 100%;
+    }
+
+    .team-content img{
+        width: 80%;
+        min-height: 40vh;
+    }
+}

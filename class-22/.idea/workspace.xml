@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86af6bf5-5226-45e0-888f-351705b14c36" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-2/chess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-2/hw-table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-2/nested-table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-2/resume.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-2/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/banner.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/banner1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/banner2.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/banner5.350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/bitm-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/content1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/content2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/logo2.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/logo3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/logo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/logo5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/slider.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/slider1.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/slider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/image/slider3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/banner.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/content2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/logo4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/logo5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/register.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/slider2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/image/slider3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../class-4/register.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2E4InYSDQfI4kw2D6d6sHmFT909" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86af6bf5-5226-45e0-888f-351705b14c36" name="Default Changelist" comment="" />
+      <created>1661848596258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661848596258</updated>
+      <workItem from="1661848597383" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="420" y="246" key="FileChooserDialogImpl" timestamp="1661848654079">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="420" y="246" key="FileChooserDialogImpl/0.0.1280.984@0.0.1280.984" timestamp="1661848654079" />
+  </component>
+</project>

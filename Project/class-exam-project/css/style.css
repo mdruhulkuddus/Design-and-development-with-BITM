@@ -109,7 +109,7 @@ body {
 
 }
 
-.image img{
+.image-gallery img{
     height: 200px;
     width: 248px;
     margin: 1px;
@@ -118,19 +118,28 @@ body {
     float: left;
 }
 
-/* .image .hov:hover {
-    content: "dfsdfs ";
-    width: 250px;
-    height: 200px;
-    margin: auto;
-    background-color: red;
-    display: block;
-    transition: .5s;
+/* .image-gallery{
+    position: relative;
 }
-
-.image .hov:hover::after {
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    top: 24%;
+    background-color: #008CBA;
+    overflow: hidden;
+    height: 200px;
+    width: 150px    ;
+    transition: .5s ease;
+}
+.image-gallery:hover .overlay{
     width: 248px;
+    left: 0;
 } */
+
+  
+
 
 /* footer */
 .footer{

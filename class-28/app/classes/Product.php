@@ -15,8 +15,8 @@ use App\classes\Category;
             [
                 'id' => 1,
                 'brandId' => '1',
-                'categoryId' => '2',
-                'name' => 'New Laptop',
+                'categoryId' => '1',
+                'name' => 'HP Pro G1',
                 'price' => '505000 TK',
                 'CompanyName' => 'HP',
                 'description' => 'Best Laptop',
@@ -26,53 +26,54 @@ use App\classes\Category;
                 'id' => 2,
                 'brandId' => '2',
                 'categoryId' => '1',
-                'name' => 'Best Laptop',
+                'name' => 'Dell S1',
                 'price' => '3500 TK',
                 'CompanyName' => 'Dell',
-                'description' => 'Best Laptop',
+                'description' => 'Super Laptop',
                 'image' => 'dell.jpg'
             ],
             [
                 'id' => 3,
                 'brandId' => '3',
-                'categoryId' => '2',
-                'name' => 'Super Laptop',
+                'categoryId' => '1',
+                'name' => 'DCL G1',
                 'price' => '505000 TK',
                 'CompanyName' => 'DCL',
                 'description' => 'Best Laptop',
-                'image' => 'dell2.jpg'
+                'image' => 'dcl2.jpg'
             ],
-
             [
                 'id' => 4,
-                'brandId' => '1',
-                'categoryId' => '1',
-                'name' => 'Best Laptop',
-                'price' => '3500 TK',
-                'CompanyName' => 'HP',
-                'description' => 'Best Laptop',
-                'image' => 'hp.jpg'
+                'brandId' => '4',
+                'categoryId' => '2',
+                'name' => 'Samsung A1',
+                'price' => '505000 TK',
+                'CompanyName' => 'Samsung',
+                'description' => 'Best Mobile',
+                'image' => 'mobile6.png'
             ],
             [
                 'id' => 5,
-                'brandId' => '3',
+                'brandId' => '4',
                 'categoryId' => '2',
-                'name' => 'Best Laptop',
+                'name' => 'Samsung M1',
                 'price' => '505000 TK',
-                'CompanyName' => 'DCL',
-                'description' => 'Best Laptop',
-                'image' => 'dcl.png'
+                'CompanyName' => 'Samsung',
+                'description' => 'High Mobile',
+                'image' => 'mobile4.png'
             ],
             [
                 'id' => 6,
-                'brandId' => '1',
-                'categoryId' => '1',
-                'name' => 'Super Laptop',
-                'price' => '3500 TK',
-                'CompanyName' => 'HP',
-                'description' => 'Best Laptop',
-                'image' => 'dcl2.jpg'
-            ]
+                'brandId' => '4',
+                'categoryId' => '2',
+                'name' => 'Samsung G5',
+                'price' => '505000 TK',
+                'CompanyName' => 'Samsung',
+                'description' => 'Super Mobile',
+                'image' => 'mobile5.png'
+            ],
+
+
         ];
     }
 

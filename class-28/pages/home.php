@@ -1,7 +1,7 @@
 
     <?php include('header.php'); ?>
 
-        <section class="py-5">
+        <section class="py-5" style="background-color: #eee;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -19,13 +19,13 @@
 
                     <div class="col-md-4">
                         <div class="card mb-4">
-                            <img src="assets/image/<?php echo $product['image']?>" style="height: 350px; width: 100%;">
+                            <img src="assets/image/<?php echo $product['image']?>" style="height: 300px; width: 100%;">
                             <div class="card-body">
                                 <h4>Product Name : <?php echo $product['name']?> </h4>
                                 <p>Product Price : <?php echo $product['price']?> </p>
                                 <p>Product Description : <?php echo $product['description']?></p>
-                                <p>Company Name : <?php echo $product['CompanyName']?> </p>
-                                <a href="action.php?page=details&id=<?php echo $product['id']?>" class="btn btn-outline-primary">Details</a>
+<!--                                <p>Brand Name : --><?php //echo $product['CompanyName']?><!-- </p>-->
+                                <a href="action.php?page=details&id=<?php echo $product['id']?>&catID=<?php echo $product['categoryId'] ?>&brandID=<?php echo $product['brandId'] ?>" class="btn btn-outline-primary">Details</a>
                             </div>
                         </div>
                     </div>

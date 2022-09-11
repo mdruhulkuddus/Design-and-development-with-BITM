@@ -1,322 +1,42 @@
-<?php include('header.php'); ?>
-
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="text-center">Calculator</h2>
+<?php  include 'pages/header.php'?>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="text-center"> Calculator </h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <form action="action.php" method="post">
-                            <div class="form-group row">
-                                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Number 1 </label>
-                                <div class="col-sm-10">
-                                    <input type="number" value="<?php echo isset($num1)? $num1 : ' '?>" name="num1" class="form-control form-control-sm" id="colFormLabelSm" >
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group row">
-                                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Number 2</label>
-                                <div class="col-sm-10">
-                                    <input type="number" name="num2" value="<?php echo isset($num2)? $num2 : ' '?>" class="form-control form-control-sm" id="colFormLabelSm" >
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group row" align="center">
-                                <div class="col-sm-10">
-                                    <input type="submit" name="add" value="+" class=" form-control-sm" id="colFormLabelSm" >
-                                    <input type="submit" name="sub" value="-"  class=" form-control-sm" id="colFormLabelSm" >
-                                    <input type="submit" name="mul" value="*"  class=" form-control-sm" id="colFormLabelSm" >
-                                    <input type="submit" name="div" value="/"  class=" form-control-sm" id="colFormLabelSm" >
-                                </div>
-                            </div>
-                            <br>
-                            <div class="form-group row">
-                                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Result</label>
-                                <div class="col-sm-10">
-                                    <input type="number" name="result"  value="<?php echo isset($result)? $result : ' '?>" class="form-control form-control-sm" id="colFormLabelSm" >
-                                </div>
-                            </div>
-
-                        </form>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body" >
+                            <form action="action.php" method="post">
+                                <label for="firstNumber" class="form-label"> First Number :</label>
+                                <input id="firstNumber" name="first_number" type="text " class="form-control" value="<?php echo isset($firstNumber)? $firstNumber :' ' ?>" placeholder="First Number"><br>
+                                <label for="lastNumber" class="form-label"> Last Number :</label>
+                                <input id="lastNumber" name="last_number" type="text " class="form-control" value="<?php echo isset($lastNumber)? $lastNumber :' ' ?>" placeholder="Last Number"><br>
+                                <label for="lastNumber" class="form-label"> Choose :</label>
+                                <input id="lastNumber" name="choose" type="radio" value="+"> &nbsp;+ &nbsp;&nbsp;
+                                <input id="lastNumber" name="choose" type="radio" value="-"> &nbsp; - &nbsp;&nbsp;
+                                <input id="lastNumber" name="choose" type="radio" value="*"> &nbsp; * &nbsp;&nbsp;
+                                <input id="lastNumber" name="choose" type="radio" value="/"> &nbsp; / &nbsp;&nbsp;
+                                <input id="lastNumber" name="choose" type="radio" value="%"> &nbsp; % &nbsp;&nbsp;
+                                <br>
+                                <label for="result" class="form-label"> Result :</label>
+                                <input id="result"  type="text " class="form-control" value="<?php echo isset($result)? $result :' ' ?>" placeholder="Result"><br>
+                                <input type="submit" name="calculate" class="btn btn-outline-secondary" value="Calculate"><br>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-
-
-<?php // echo  '<pre>'?>
-<?php //print_r($productById)?>
-
-<?php include('footer.php'); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<?php  include 'pages/footer.php'?>

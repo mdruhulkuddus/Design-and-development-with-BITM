@@ -31,9 +31,17 @@ $categories = $category->allCategory();
         elseif($_GET['page'] == 'calculator'){
             include('pages/calculator.php');
         }
-        elseif($_GET['page'] == 'gallery'){
+        elseif($_GET['page'] == 'galleryFancy'){
             $products = $products->allProduct();
-            include('pages/gallery.php');
+            include('pages/galleryFancy.php');
+        }
+        elseif($_GET['page'] == 'galleryLight'){
+            $products = $products->allProduct();
+            include('pages/galleryLight.php');
+        }
+        elseif($_GET['page'] == 'galleryEcommerce'){
+            $products = $products->allProduct();
+            include('pages/galleryEcommerce.php');
         }
     }
     elseif ($_POST){
@@ -46,42 +54,12 @@ $categories = $category->allCategory();
             include('pages/contact.php');
 
         }
-        elseif (isset($_POST['add'])){
-            $num1 = $_POST['num1'];
-            $num2 = $_POST['num2'];
-            $result = $num1 + $num2;
-
-            include('pages/calculator.php');
-
-        }elseif (isset($_POST['sub'])){
-            $num1 = $_POST['num1'];
-            $num2 = $_POST['num2'];
-            $result = $num1 - $num2;
-
-            include('pages/calculator.php');
-
-        }elseif (isset($_POST['mul'])){
-            $num1 = $_POST['num1'];
-            $num2 = $_POST['num2'];
-            $result = $num1 * $num2;
-
-            include('pages/calculator.php');
-
-        }elseif (isset($_POST['div'])){
-            $num1 = $_POST['num1'];
-            $num2 = $_POST['num2'];
-            $result = $num1 / $num2;
-
-            include('pages/calculator.php');
-
-        }
-        elseif (isset($_POST['calculate'])){
-            $calculator = new Calculator;
-            $result_s = $calculator->calculate($_POST);
-            $firstNumber = $_POST['firstNumber'];
-            $secondNumber = $_POST['secondNumber'];
-            include('pages/calculator.php');
-
+        if (isset($_POST['calculate'])){
+            $calculator=new Calculator();
+            $result=$calculator->calculate($_POST);
+            $firstNumber=$_POST['first_number'];
+            $lastNumber=$_POST['last_number'];
+            include 'pages/calculator.php';
         }
 
 

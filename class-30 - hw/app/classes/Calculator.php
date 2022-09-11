@@ -1,26 +1,41 @@
 <?php
 
 
+namespace App\classes;
+
+
 class Calculator
 {
-
-    public $firstNumber;
-    public $lastNumber;
+    public $first_number;
+    public $last_number;
     public $result;
     public $choose;
-
     public function calculate($cal){
-        $this->firstNumber = $cal['firstNumber'];
-        $this->lastNumber = $cal['lastNumber'];
-        $this->choose = $cal['addition'];
-        switch (  $this->choose){
-            case 'plus' :
-               $this->result = $this->firstNumber + $this->lastNumber;
-               break;
-
+//        echo '<pre>';
+//        print_r($cal);
+        $this->first_number=$cal['first_number'];
+        $this->last_number=$cal['last_number'];
+        $this->choose=$cal['choose'];
+        switch ($this->choose){
+            case '+' :
+                $this->result=$this->first_number+$this->last_number;
+                break;
+            case '-' :
+                $this->result=$this->first_number-$this->last_number;
+                break;
+            case '*' :
+                $this->result=$this->first_number*$this->last_number;
+                break;
+            case '/' :
+                $this->result=$this->first_number/$this->last_number;
+                break;
+            case '%' :
+                $this->result=$this->first_number%$this->last_number;
+                break;
             default:
                 echo '404';
         }
         return $this->result;
-        }
     }
+
+}

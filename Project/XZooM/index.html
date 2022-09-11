@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page Image Zoom Effect Jquery</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- get jQuery from the google apis or use your own -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all" />
+
+    <!-- XZOOM JQUERY PLUGIN  -->
+    <script type="text/javascript" src="js/xzoom.js"></script>
+</head>
+
+<body>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="xzoom-container">
+            <img src="images/1-min.jpg" class="xzoom" xoriginal="images/1.jpg">
+        <div class="xzoom-thumbs">
+            <a href="images/1.jpg">
+                <img src="images/1-min.jpg" class="xzoom-gallery" xpreview ="images/1-min.jpg">
+            </a>
+            <a href="images/2.jpg">
+                <img src="images/2-min.jpg" class="xzoom-gallery">
+            </a>
+            <a href="images/3.jpg">
+                <img src="images/3-min.jpg" class="xzoom-gallery">
+            </a>
+            <a href="images/4.jpg">
+                <img src="images/4-min.jpg" class="xzoom-gallery">
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/xzoom.js"></script>
+    <script>
+        $(".xzoom, .xzoom-gallery").xzoom({tint: '#333', Xoffset: 15});
+    </script>
+</body>
+
+</html>

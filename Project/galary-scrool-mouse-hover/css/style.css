@@ -1,0 +1,25 @@
+.xzoom-thumbs img{
+    display: inline-block;
+    height: 80px;
+    width: 95px;
+    border: 1px solid #ccc;
+}
+.xzoom-thumbs a{
+    text-decoration: none;
+}
+.container{
+    height: 2000px;
+    width: auto;
+    background-color: #eee;
+}
+.xzoom-container{
+    margin-left: 30%;
+}
+.xzoom-preview{
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 20px 2px #cccccc;
+}
+.active{
+    border: 1px solid #0c4128;
+    box-shadow: 0 0 3px 0 #0f5132;
+}

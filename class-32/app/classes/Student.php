@@ -12,12 +12,12 @@ class Student
     {
 
             $this->name = isset($data['name']) ? $_POST['name'] : '';
-            $this->roll =  isset($data['roll']);
-            $this->phone = isset($data['phone']);
-            $this->email =  isset($data['email']);
-            $this->department = isset($data['department']);
-            $this->session = isset($data['session']);
-            $this->address = isset($data['address']);
+            $this->roll =  isset($data['roll']) ? $_POST['roll'] : '';
+            $this->phone = isset($data['phone']) ? $_POST['phone'] : '';
+            $this->email =  isset($data['email']) ? $_POST['email'] : '';
+            $this->department = isset($data['department']) ? $_POST['department'] : '';
+            $this->session = isset($data['session']) ? $_POST['session'] : '';
+            $this->address = isset($data['address']) ? $_POST['address'] : '';
 
     }
 

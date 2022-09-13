@@ -39,7 +39,8 @@ use App\classes\Student;
             $editId = $_POST['editId'];
             $student = new Student($_POST);
             $UpdateMessage = $student->editStudentInfoById($editId);
-            include 'pages/home.php';
+            $studentInfo = $student->getAllStudentInfo();
+            include 'pages/student_list.php';
         }
     }
     else{

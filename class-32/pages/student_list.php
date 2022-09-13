@@ -10,6 +10,9 @@
                         <?php if(isset($deleteMessage)) {?>
                             <button type="button" class="form-control btn btn-success btn-lg btn-block"><?php echo isset($deleteMessage) ? $deleteMessage : ''; ?></button>
                         <?php } ?>
+                        <?php if(isset($UpdateMessage)) {?>
+                            <button type="button" class="form-control btn btn-danger btn-lg btn-block"><?php echo isset($UpdateMessage) ? $UpdateMessage : ''; ?></button>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

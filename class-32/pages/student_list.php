@@ -8,7 +8,7 @@
                     <div class="card-header">
                         <h2 class="text-center">Student List </h2>
                         <?php if(isset($deleteMessage)) {?>
-                            <button type="button" class="form-control btn btn-danger btn-lg btn-block"><?php echo isset($deleteMessage) ? $deleteMessage : ''; ?></button>
+                            <button type="button" class="form-control btn btn-success btn-lg btn-block"><?php echo isset($deleteMessage) ? $deleteMessage : ''; ?></button>
                         <?php } ?>
                     </div>
                 </div>
@@ -45,8 +45,8 @@
                                 <th scope="col"><?php echo $sudent['session']?></th>
                                 <th scope="col"><?php echo $sudent['address']?></th>
                                 <th scope="col">
-                                    <a href="action.php?page=edit&id=<?php echo $sudent['id']?>">Edit</a>
-                                    <a href="action.php?page=delet&id=<?php echo $sudent['id']?>">Delet</a>
+                                    <a href="action.php?page=edit&id=<?php echo $sudent['id']?>" class="btn btn-primary btn-sm">Edit</a>
+                                    <a href="action.php?page=delet&id=<?php echo $sudent['id']?>" class="btn btn-danger btn-sm">Delet</a>
                                 </th>
 
                             </tr>

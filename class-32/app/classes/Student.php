@@ -22,7 +22,7 @@ class Student
     }
 
     public function newStudent(){
-      $this->sql =  "INSERT INTO students (name, roll, phone, email, department, session, address) VALUES ('$this->name','$this->roll', '$this->phone', '$this->email', '$this->department', '$this->session', '$this->address')";
+      $this->sql =  "INSERT INTO `students`(`name`, `roll`, `phone`, `email`, `department`, `session`, `address`) VALUES ('$this->name','$this->roll', '$this->phone', '$this->email', '$this->department', '$this->session', '$this->address')";
       $this->database = new Database();
       mysqli_query($this->database->dbConnect(), $this->sql);
       return 'success';
@@ -34,15 +34,21 @@ class Student
         return $this->allInfo;
     }
     public function deleteStudentInfo($delId){
-        $this->sql= "DELETE FROM `students` WHERE id = '$delId' ";
+        $this->sql= "DELETE FROM `students` WHERE id = $delId";
         $this->database = new Database();
         $this->stdInfo = mysqli_query($this->database->dbConnect(), $this->sql);
         return 'successfully deleted one row';
     }
-    public function editStudentInfo($id){
-        $this->sql= "SELECT * FROM `students` WHERE id = '$id' ";
+    public function getStudentInfoById($id){
+        $this->sql= "SELECT * FROM `students` WHERE id = $id";
         $this->database = new Database();
         $this->stdInfo = mysqli_query($this->database->dbConnect(), $this->sql);
         return $this->stdInfo;
+    }
+    public function editStudentInfoById($id){
+        $this->sql= "UPDATE `students` SET `name`='$this->name',`roll`='$this->roll',`phone`='$this->phone',`email`='$this->email',`department`='$this->department',`session`='$this->session',`address`='$this->address' WHERE id = $id";
+        $this->database = new Database();
+        $this->stdInfo = mysqli_query($this->database->dbConnect(), $this->sql);
+        return 'Updated successfully';
     }
 }

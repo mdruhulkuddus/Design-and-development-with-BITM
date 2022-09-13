@@ -16,14 +16,15 @@ use App\classes\Student;
         }
         elseif ($_GET['page'] == 'delet') {
             $student = new Student($_POST);
-            $stdId = $_POST['id'];
+            $stdId = $_GET['id'];
             $deleteMessage = $student->deleteStudentInfo($stdId);
+            $studentInfo = $student->getAllStudentInfo();
             include 'pages/student_list.php';
         }
         elseif ($_GET['page'] == 'edit') {
             $student = new Student($_POST);
-            $stdId = $_POST['id'];
-            $studentInfo = $student->editStudentInfo($stdId);
+            $editId = $_GET['id'];
+            $studentInfoById = $student->getStudentInfoById($editId);
             include 'pages/edit.php';
         }
     }
@@ -32,6 +33,12 @@ use App\classes\Student;
         if (isset($_POST['submit'])){
             $student = new Student($_POST);
             $message = $student->newStudent();
+            include 'pages/home.php';
+        }
+        elseif (isset($_POST['editSubmit'])){
+            $editId = $_POST['editId'];
+            $student = new Student($_POST);
+            $UpdateMessage = $student->editStudentInfoById($editId);
             include 'pages/home.php';
         }
     }

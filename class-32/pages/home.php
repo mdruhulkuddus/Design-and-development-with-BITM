@@ -1,5 +1,8 @@
-<?php include('header.php'); ?>
+<?php include('header.php');  ?>
 
+<?php if(isset($UpdateMessage)) {?>
+<button type="button" class="form-control btn btn-danger btn-lg btn-block"><?php echo isset($UpdateMessage) ? $UpdateMessage : ''; ?></button>
+<?php } ?>
         <section class="py-5" style="background-color: #eee;">
             <div class="container">
                 <div class="row">

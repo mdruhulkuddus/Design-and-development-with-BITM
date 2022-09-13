@@ -9,6 +9,9 @@ use App\classes\Student;
         if ($_GET['page'] == 'home') {
             include 'pages/home.php';
         }
+        elseif ($_GET['page'] == 'about') {
+            include 'pages/about.php';
+        }
         elseif ($_GET['page'] == 'studentList') {
             $student = new Student($_POST);
             $studentInfo = $student->getAllStudentInfo();

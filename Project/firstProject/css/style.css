@@ -90,7 +90,9 @@ body {
 .nav-item a:hover{
     color: #E91E63;
 }
-
+.navbar{
+    background-color: #ECECEC !important;
+}
 
 /*  slider section */
 

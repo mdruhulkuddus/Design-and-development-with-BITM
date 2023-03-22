@@ -1,7 +1,7 @@
-## EbookShare - Ebook Ecommerce System
+## E-Soft - A Portfolio site
 <blockquote><p>This is a simple static web-template of a portfolio site. Any organaization can use this website as portfolio.</p></blockquote>
 
-## Features of EbookShare 
+## Features of Portfolio 
 <ul>
     <li>About Us</li>
     <li>Portfolio</li>
